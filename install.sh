@@ -22,20 +22,10 @@ cd ${HOME}
 sudo apt-get update
 
 # Install Web Server deps
-sudo apt-get install -y \
-    apache2 \
-    php \
-    sqlite \
-    php-mcrypt \
-    php7-sqlite \
-    dnsmasq \
-    sysv-rc-conf \
-    make \
-    bison \
-    flex \
-    gpsd \
-    libnet-gpsd3-perl \
-    ntp
+sudo apt-get install -y apache2 php sqlite php-mcrypt dnsmasq sysv-rc-conf make bison flex gpsd libnet-gpsd3-perl ntp aptitude
+
+# Use aptitude to install php-sqlite
+sudo aptitude install -y php-sqlite3
 
 # Remove ifplugd if present, as it interferes with olsrd
 sudo apt-get remove -y ifplugd
