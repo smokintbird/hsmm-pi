@@ -24,10 +24,10 @@ sudo apt-get update
 # Install Web Server deps
 sudo apt-get install -y \
     apache2 \
-    php5 \
+    php \
     sqlite \
-    php5-mcrypt \
-    php5-sqlite \
+    php-mcrypt \
+    php7-sqlite \
     dnsmasq \
     sysv-rc-conf \
     make \
